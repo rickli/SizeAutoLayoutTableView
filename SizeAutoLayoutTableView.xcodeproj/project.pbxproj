@@ -14,6 +14,7 @@
 		3C6D23881EE135600004A52A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C6D23871EE135600004A52A /* Assets.xcassets */; };
 		3C6D238B1EE135600004A52A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C6D23891EE135600004A52A /* LaunchScreen.storyboard */; };
 		3C6D23961EE135610004A52A /* SizeAutoLayoutTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D23951EE135610004A52A /* SizeAutoLayoutTableViewTests.m */; };
+		3C6D23A21EE135F40004A52A /* SizeAutoLayoutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D23A11EE135F40004A52A /* SizeAutoLayoutTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		3C6D23911EE135600004A52A /* SizeAutoLayoutTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SizeAutoLayoutTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C6D23951EE135610004A52A /* SizeAutoLayoutTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SizeAutoLayoutTableViewTests.m; sourceTree = "<group>"; };
 		3C6D23971EE135610004A52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C6D23A01EE135F40004A52A /* SizeAutoLayoutTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeAutoLayoutTableViewCell.h; sourceTree = "<group>"; };
+		3C6D23A11EE135F40004A52A /* SizeAutoLayoutTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizeAutoLayoutTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				3C6D237F1EE135600004A52A /* AppDelegate.m */,
 				3C6D23811EE135600004A52A /* ViewController.h */,
 				3C6D23821EE135600004A52A /* ViewController.m */,
+				3C6D23A01EE135F40004A52A /* SizeAutoLayoutTableViewCell.h */,
+				3C6D23A11EE135F40004A52A /* SizeAutoLayoutTableViewCell.m */,
 				3C6D23841EE135600004A52A /* Main.storyboard */,
 				3C6D23871EE135600004A52A /* Assets.xcassets */,
 				3C6D23891EE135600004A52A /* LaunchScreen.storyboard */,
@@ -214,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C6D23831EE135600004A52A /* ViewController.m in Sources */,
+				3C6D23A21EE135F40004A52A /* SizeAutoLayoutTableViewCell.m in Sources */,
 				3C6D23801EE135600004A52A /* AppDelegate.m in Sources */,
 				3C6D237D1EE135600004A52A /* main.m in Sources */,
 			);

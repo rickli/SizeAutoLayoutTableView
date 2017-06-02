@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SizeAutoLayoutTableViewCell.h
 //  SizeAutoLayoutTableView
 //
 //  Created by King on 2017/6/2.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
-
-
+@interface SizeAutoLayoutTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UITextView *textView;
 @end
-

@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
+#import "SizeAutoLayoutTableViewCell.h"
+@interface ViewController ()<UITextViewDelegate>
 
 @end
 
@@ -16,13 +16,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.tableView.estimatedRowHeight = 100;
 }
 
+#pragma mark - UITableViewDataSource
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 3;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    SizeAutoLayoutTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AutoLayoutTableViewCell" forIndexPath:indexPath];
+    cell.textView.delegate = self;
+    return cell;
+}
+
+#pragma mark - UITextViewDelegate
+- (void)textViewDidChange:(UITextView *)textView {
+    CGPoint currentOffset = self.tableView.contentOffset;
+    [UIView setAnimationsEnabled:NO];
+    [self.tableView beginUpdates];
+    [self.tableView endUpdates];
+    [UIView setAnimationsEnabled:YES];
+    [self.tableView setContentOffset:currentOffset animated:NO];
 }
 
 
