@@ -1,3 +1,3 @@
-nguage: objective-c
-xcode_project: SizeAutoLayoutTableView.xcodeproj # path to your xcodeproj folder
-xcode_scheme: SizeAutoLayoutTableView
+language: objective-c
+script:
+  - xctool -project SizeAutoLayoutTableView.xcodeproj -scheme SizeAutoLayoutTableView -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
